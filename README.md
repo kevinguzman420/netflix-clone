@@ -4,7 +4,7 @@ This project has been created using: React (create-react-app) | Styled-component
 
 ## Screenshot project:
 
-![](/home/guzmankevin/Documentos/ejercicios-frontend/neftlix-clone/screenshot.png)
+![](https://github.com/kevinguzman420/netflix-clone/blob/master/screenshot.png)
 
 
 ## Apis used:
@@ -15,7 +15,7 @@ This project has been created using: React (create-react-app) | Styled-component
 ### `Init the app`
 
 - git clone https://github.com/kevinguzman420/netflix-clone.git
-- cd
+- cd netflix-clone
 - yarn install
 - yarn start
 - got to http://localhost:3000
