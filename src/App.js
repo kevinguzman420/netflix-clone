@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import generateStore from './redux/store';
+import styled from 'styled-components';
+import Home from './containers/Home';
+
+const Wrapper = styled.div`
+`;
 
 function App() {
+  const store = generateStore();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Wrapper>
+        <Home />
+      </Wrapper>
+    </Provider>
   );
 }
 
